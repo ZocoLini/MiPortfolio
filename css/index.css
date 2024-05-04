@@ -1,58 +1,34 @@
 @import "colors.css";
 
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
 main {
   margin: 0 auto;
-  padding: 0;
+  padding-top: 100px;
   display: flex;
+  justify-content: center;
 }
 body {
   background-color: var(--color-background);
+  background-image: url("img/indexBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+iframe
+{
+  border: none;
 }
 .pane {
+  padding: 15px;
+  height: fit-content;
   border-radius: 20px;
   margin: 20px;
   background-color: var(--color-panel);
 }
-#left-panel, #right-panel {
-  width: 200px;
-  padding: 20px;
-}
-#left-panel {
-
-}
-#right-panel {
-
-}
 #center-panel {
   width: 50%;
-}
-.vertical-flex
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/*panel-button*/
-.panel-button {
-  border-radius: 10px;
-  background-color: var(--color-button-background);
-  padding: 20px;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-text-align: center;
-}
-.panel-button:hover {
-  background-color: var(--color-button-hover);
-}
-.panel-button.selected {
-  background-color: #c0c0c0;
-}
-.panel-button img {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-.panel-button p {
-  margin: 0;
+  height: 600px;
 }

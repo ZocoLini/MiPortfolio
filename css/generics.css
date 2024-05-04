@@ -1,0 +1,34 @@
+.primary-text {
+  color: var(--color-primary-text);
+}
+.secondary-text {
+  color: var(--color-secondary-text);
+}
+.third-text {
+  color: var(--color-third-text);
+}
+.icon
+{
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+.iBox
+{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var(--color-button-background);
+}
+.flex {
+  display: flex;
+}
+.vertical-flex
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-flex {
+  align-items: center;
+}

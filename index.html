@@ -1,12 +1,15 @@
-<!doctype html>
-<html class="no-js" lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Borja Castellano | Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/index/right-pane.css">
+  <link rel="stylesheet" type="text/css" href="css/index/left-pane.css">
+  <link rel="stylesheet" type="text/css" href="css/generics.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -15,9 +18,9 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="/img/pageIcon/favicon.ico" sizes="any">
+  <link rel="icon" href="/img/pageIcon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon.png">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -25,32 +28,80 @@
 
 <body>
 <main>
-  <div id="left-panel" class="pane">
-    <h3>Panel izquierdo</h3>
+  <div id="left-panel" class="pane vertical-flex centered-flex">
+    <div id="profileImg-container">
+      <img id="profileImg" src="img/profile.jpg" alt="Profile picture">
+    </div>
+
+    <div id="presentacion" class="vertical-flex centered-flex">
+
+      <h2>Borja Castellano</h2>
+
+      <div class="iBox primary-text">Desarrollador multiplataforma</div>
+
+      <div id="socialMedia" class="flex">
+        <div class="iBox">
+          <a href="https://www.linkedin.com/in/borja-cas/" target="_blank">
+            <img class="icon" src="img/icon/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+        <div class="iBox">
+          <a href="https://www.instagram.com/_zocoo/" target="_blank">
+            <img class="icon" src="img/icon/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactInfo" class="vertical-flex iBox">
+      <div class="contactItem">
+        <img class="icon" src="img/icon/email.png" alt="Email">
+        <div class="vertical-flex">
+          <p class="third-text">Email</p>
+          <p class="second-text">borjacastellano1@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contactItem">
+        <img class="icon" src="img/icon/phone.png" alt="phone">
+        <div class="vertical-flex">
+          <p class="third-text">Phone</p>
+          <p class="second-text">+34 681 240 207</p>
+        </div>
+      </div>
+    </div>
+
+    <a id="dowloadCV" class="vertical-flex centered-flex" href="docs/CV.pdf" target="_blank">
+      <div class="flex centered-flex">
+        <img class="icon" src="img/icon/download.png" alt="Download">
+        <p>Download CV</p>
+      </div>
+    </a>
   </div>
 
   <div id="center-panel" class="pane">
-    <iframe src="about.html" width="100%" height="100%"></iframe>
+    <iframe src="html/about.html" width="100%" height="100%"></iframe>
   </div>
 
-  <div id="right-panel" class="pane">
-    <div class="vertical-flex">
-      <div class="panel-button" onclick="loadPage('about.html')">
-        <img src="icon.png" alt="Imagen 1" sizes="50px 50px">
-        <p>About</p>
-      </div>
-      <div class="panel-button" onclick="loadPage('pagina2.html')">
-        <img src="icon.png" alt="Imagen 2">
-        <p>Resume</p>
-      </div>
-      <div class="panel-button" onclick="loadPage('pagina2.html')">
-        <img src="icon.png" alt="Imagen 2">
-        <p>Works</p>
-      </div>
-      <div class="panel-button" onclick="loadPage('pagina2.html')">
-        <img src="icon.png" alt="Imagen 2">
-        <p>Contact</p>
-      </div>
+  <div id="right-pane" class="pane vertical-flex">
+    <div class="pane-button" onclick="loadPage('html/about.html')">
+      <img class="icon" src="img/icon/about.png" alt="Imagen 1">
+      <p>About</p>
+    </div>
+
+    <div class="pane-button" onclick="loadPage('html/resume.html')">
+      <img class="icon" src="img/icon/resume.png" alt="Imagen 2">
+      <p>Resume</p>
+    </div>
+
+    <div class="pane-button" onclick="loadPage('html/works.html')">
+      <img class="icon" src="img/icon/works.png" alt="Imagen 2">
+      <p>Works</p>
+    </div>
+
+    <div class="pane-button" onclick="loadPage('html/contact.html')">
+      <img class="icon" src="img/icon/contact.png" alt="Imagen 2">
+      <p>Contact</p>
     </div>
   </div>
 </main>
@@ -63,11 +114,4 @@
 </script>
 
 </body>
-
-<script>
-  function loadPage(pageUrl) {
-    // Cargar la página en el panel central
-    document.getElementById('center-panel').innerHTML = '<iframe src="' + pageUrl + '" width="100%" height="100%"></iframe>';
-  }
-</script>
 </html>
