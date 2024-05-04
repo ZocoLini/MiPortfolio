@@ -1,3 +1,18 @@
+@import "colors.css";
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+body {
+  background-color: var(--color-background);
+  background-image: url("img/indexBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+p {
+  text-align: left;
+}
 .primary-text {
   color: var(--color-primary-text);
 }
@@ -11,11 +26,33 @@
 {
   height: 30px;
   width: 30px;
-  margin: 5px;
+}
+.pane {
+  padding: 15px;
+  border-radius: 20px;
+  margin: 20px 10px;
+  background-color: var(--color-panel);
+}
+
+.iframe-pane {
+  padding: 15px;
+  border-radius: 20px;
+  margin: 20px 10px;
+  background-color: var(--color-panel);
+}
+.iframe-inner-pane
+{
+  padding: 10px;
+  height: 600px;
+  overflow: scroll;
+}
+.fit-content {
+  width: fit-content;
+  height: fit-content;
 }
 .iBox
 {
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   border-radius: 10px;
   background-color: var(--color-button-background);

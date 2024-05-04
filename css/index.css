@@ -1,34 +1,15 @@
-@import "colors.css";
-
-* {
-  font-family: "JetBrains Mono", monospace;
-}
-
 main {
   margin: 0 auto;
   padding-top: 100px;
   display: flex;
   justify-content: center;
 }
-body {
-  background-color: var(--color-background);
-  background-image: url("img/indexBackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-}
-iframe
-{
-  border: none;
-}
-.pane {
-  padding: 15px;
-  height: fit-content;
-  border-radius: 20px;
-  margin: 20px;
-  background-color: var(--color-panel);
-}
 #center-panel {
   width: 50%;
-  height: 600px;
+  height: 800px;
+  overflow: clip;
+}
+#center-panel iframe
+{
+  border: none;
 }
