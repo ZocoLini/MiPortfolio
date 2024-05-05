@@ -20,7 +20,6 @@ p {
   color: var(--color-third-text);
 }
 .centered {
-  width: max-content;
   margin: 0 auto;
 }
 .icon
@@ -58,6 +57,10 @@ p {
   border-radius: 10px;
   background-color: var(--color-button-background);
 }
+.two-columns {
+  column-count: 2;
+  column-gap: 20px;
+}
 .flex {
   display: flex;
 }
@@ -70,3 +73,15 @@ p {
 .centered-flex {
   align-items: center;
 }
+
+.button {
+  background-color: var(--color-button-background);
+  border-radius: 10px;
+  margin: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color-button-hover);
+}
+

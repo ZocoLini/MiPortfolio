@@ -1,15 +1,21 @@
+body
+{
+  background-image: url("img/indexBackground.jpg");
+  background-color: var(--color-background);
+}
+
 main {
   margin: 0 auto;
   padding-top: 100px;
   display: flex;
   justify-content: center;
 }
-#section-container {
+#center-panel {
   width: 50%;
   height: 800px;
   overflow: clip;
 }
-#section-container iframe
+#center-panel iframe
 {
   border: none;
 }
