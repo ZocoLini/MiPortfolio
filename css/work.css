@@ -34,7 +34,7 @@ main section {
 
 .controlled-size
 {
-  width: min(100%, 800px);
+  width: min(100%, 1200px);
 }
 
 #enlaces
