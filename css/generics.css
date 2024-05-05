@@ -4,11 +4,8 @@
   font-family: "JetBrains Mono", monospace;
 }
 body {
-  background-color: var(--color-background);
-  background-image: url("img/indexBackground.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 p {
   text-align: left;
@@ -21,6 +18,10 @@ p {
 }
 .third-text {
   color: var(--color-third-text);
+}
+.centered {
+  width: max-content;
+  margin: 0 auto;
 }
 .icon
 {

@@ -1,17 +1,76 @@
+h2 {
+  text-align: center;
+}
+
+body
+{
+  background-image: url("../img/indexBackground.jpg");
+}
+
+section
+{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 header
 {
-  width: max-content;
-  margin: 0 auto;
+  margin: 50px 20px;
+  padding: 50px;
+
+  border-radius: 10px;
+  background-color: var(--color-panel);
 }
+
 main
 {
-  width: max-content;
+  display: flex;
+}
+
+main section {
+  height: fit-content;
+  background-color: var(--color-panel);
+}
+
+#contenedor-multimedia
+{
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
-footer
-{
 
+.corrillo-de-imagenes
+{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  border: black 2px solid;
 }
+
+.corrillo-de-imagenes img
+{
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  border: black 2px solid;
+}
+
+.centered-limited
+{
+  width: 80%;
+  max-width: 1000px;
+}
+
+#enlaces
+{
+  position: relative;
+  right: 0;
+  max-height: 200px;
+}
+
 header img
 {
   width: 100px;

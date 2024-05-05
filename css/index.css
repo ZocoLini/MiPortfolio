@@ -4,12 +4,12 @@ main {
   display: flex;
   justify-content: center;
 }
-#center-panel {
+#section-container {
   width: 50%;
   height: 800px;
   overflow: clip;
 }
-#center-panel iframe
+#section-container iframe
 {
   border: none;
 }

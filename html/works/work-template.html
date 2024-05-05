@@ -10,46 +10,98 @@
   <title>Nombre Proyecto</title>
 </head>
 <body>
-<header class="flex">
-  <img src="../../img/works/icono-leba.png" alt="leba">
-  <h1>Nombre Proyecto</h1>
-</header>
-
-<main>
-  <div>
-    <h2>Ficha Técnica</h2>
-    <ul>
-      <li>Tecnologías Utilizadas: HTML, CSS, JavaScript</li>
-      <li>Características Principales: ...</li>
-      <li>Enlaces: <a href="#">GitHub</a>, <a href="#">Demo</a></li>
-    </ul>
-
-    <p>Equipo o Colaboradores...</p>
-  </div>
-
-  <div>
-    <h2>Descripción del proyecto</h2>
-    <p>Descripción del proyecto...</p>
-  </div>
-
-  <div>
-    <h2>Estado</h2>
-    <p>Contexto o problemática...</p>
-    <p>Próximos Pasos o Mejoras...</p>
-  </div>
-
-  <p>Logros o Resultados...</p>
-  <div>
-    <h2>Multimedia</h2>
-    <div>
-      <img src="captura1.png" alt="Captura de pantalla 1">
-      <img src="captura2.png" alt="Captura de pantalla 2">
+<div class="centered">
+  <header class="centered-limited">
+    <div class="centered flex">
+      <img src="../../img/works/leba/icono-leba.png" alt="leba">
+      <h1>Nombre Proyecto</h1>
     </div>
-  </div>
-</main>
+  </header>
 
-<footer>
+  <main id="main">
+    <div class="centered-limited">
+      <section>
+        <h2>Ficha Técnica</h2>
+        <p><strong>Tecnologías Utilizadas:</strong> C# y Unity</p>
+        <p><strong>Características Principales:</strong>
+        <ul>
+          <li>Juego de plataformeo vertical</li>
+          <li>Skins</li>
+          <li>Logros</li>
+          <li>Combate</li>
+          <li>Generación procedural</li>
+        </ul>
 
-</footer>
+        <p><strong>Equipo o Colaboradores:</strong> Borja Castellano</p>
+      </section>
+
+      <section>
+        <h2>Estado</h2>
+
+        <p><strong>Disponibilidad:</strong> El juego está disponible en Play Store para su descarga</p>
+        <p><strong>Documentación:</strong> El proyecto se encuentra pendiente de documentación.</p>
+        <p><strong>Refractorización:</strong> Debido a la antiguedad del proyecto este está pendiente de ser
+          refractorizado.</p>
+      </section>
+
+      <section>
+        <h2>Descripción del proyecto</h2>
+
+        <p>Descripción del proyecto...</p>
+      </section>
+
+      <section>
+
+        <h2>Multimedia</h2>
+
+        <div id="contenedor-multimedia">
+          <div class="corrillo-de-imagenes">
+            <img src="../../img/works/leba/captura1.jpg" alt="Captura 1">
+            <img src="../../img/works/leba/captura2.jpg" alt="Captura 2">
+            <img src="../../img/works/leba/captura3.jpg" alt="Captura 3">
+            <img src="../../img/works/leba/captura4.jpg" alt="Captura 4">
+            <img src="../../img/works/leba/captura5.jpg" alt="Captura 5">
+            <img src="../../img/works/leba/captura6.jpg" alt="Captura 6">
+            <img src="../../img/works/leba/captura7.jpg" alt="Captura 7">
+          </div>
+
+          <div>
+            <video>
+              <source src="video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="enlaces" class="vertical-flex">
+      <a class="iBox" href="https://www.linkedin.com/in/borja-cas/" target="_blank">
+        <img class="icon" src="../../img/icon/github.png" alt="GitHub">
+      </a>
+      <a class="iBox" href="https://www.instagram.com/_zocoo/" target="_blank">
+        <img class="icon" src="../../img/icon/playstore.png" alt="PlayStore">
+      </a>
+    </div>
+  </main>
+
+  <footer class="centered">
+
+  </footer>
+</div>
+
 </body>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var divFijo = document.getElementById('enlaces');
+    var main = document.getElementById('main')
+    // Limita la posición vertical del div
+    if (window.scrollY <= 300) {
+      divFijo.style.top = (300 - window.screenY) + 'px';
+    } else {
+      divFijo.style.top =  window.scrollY + 'px';
+    }
+  });
+</script>
+
 </html>
