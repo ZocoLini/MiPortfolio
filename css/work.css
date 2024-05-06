@@ -1,4 +1,4 @@
-h2 {
+h2, h1{
   text-align: center;
 }
 
@@ -7,52 +7,62 @@ body
   background-color: var(--color-background);
 }
 
-section
+#fichaTecnica
 {
-  padding: 20px;
-  border-radius: 10px;
+  height: fit-content;
+  width: 800px;
 }
 
-header
+#fichaTecnica section
 {
-  margin: 50px auto;
-  height: 300px;
-  border-radius: 10px;
-  background-color: var(--color-panel);
-  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#iconoProyecto-container
+{
+  height: 100px;
+  width: 200px;
+  overflow: visible;
+  position: relative;
+}
+
+#iconoProyecto
+{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 10%;
+  top: -100px;
 }
 
 main
 {
-  width: fit-content;
+  padding-top: 100px;
+  gap: 10px;
 }
 
-main section {
-  background-color: var(--color-panel);
-  margin-bottom: 20px;
-}
-
-.controlled-size
+#info-proyecto
 {
-  width: min(100%, 1200px);
+  width: 300px;
+}
+
+.info-contenedor {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.info-contenedor p {
+  margin: 0 0 0 10px;
 }
 
 #enlaces
 {
-  position: relative;
   height: fit-content;
-  margin: 0 auto;
-}
-
-header img
-{
-  width: 100px;
-  height: 100px;
 }
 
 #contenedor-multimedia
 {
-  background-color: var(--color-panel);
   border-radius: 10px;
 }
 
@@ -61,7 +71,6 @@ header img
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  overflow: scroll;
 }
 
 .corrillo-de-imagenes img
@@ -71,8 +80,37 @@ header img
   border-radius: 10px;
 }
 
-.button img
+.controlled-size
 {
-  width: 50px;
-  height: 50px;
+  width: min(85%, 1200px);
+}
+
+/* Navigation pane */
+#nav-bar {
+  position: relative;
+  top: 0;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 20px 10px;
+  background-color: var(--color-panel);
+}
+
+.pane-button {
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--color-button-background);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 20px;
+  height: 20px;
+}
+
+.pane-button img {
+  filter: brightness(0.2);
+}
+.pane-button:hover {
+  background-color: var(--color-button-hover);
+}
+.pane-button:hover img{
+  filter: brightness(0) invert(1);
 }
