@@ -6,11 +6,10 @@ body
 {
   background-color: var(--color-background);
 }
-
+/* left-pane */
 #fichaTecnica
 {
   height: fit-content;
-  width: 800px;
 }
 
 #fichaTecnica section
@@ -35,6 +34,27 @@ body
   top: -100px;
 }
 
+#caracteristicas
+{
+  width: 300px;
+}
+
+#caracteristicas ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+#caracteristicas ul li
+{
+  margin: 0 auto;
+}
+
+/* principal */
 main
 {
   padding-top: 100px;
@@ -48,12 +68,16 @@ main
 
 .info-contenedor {
   display: flex;
-  align-items: center;
   margin: 10px;
 }
 
 .info-contenedor p {
   margin: 0 0 0 10px;
+}
+
+#estado-pane div ul li
+{
+  margin-top: 10px;
 }
 
 #enlaces
@@ -89,14 +113,12 @@ main
 #nav-bar {
   position: relative;
   top: 0;
-  padding: 5px;
   border-radius: 20px;
-  margin: 20px 10px;
+  margin: 20px 0;
   background-color: var(--color-panel);
 }
 
 .pane-button {
-  justify-content: center;
   border-radius: 10px;
   background-color: var(--color-button-background);
   cursor: pointer;
@@ -107,6 +129,8 @@ main
 
 .pane-button img {
   filter: brightness(0.2);
+  width: 20px;
+  height: 20px;
 }
 .pane-button:hover {
   background-color: var(--color-button-hover);

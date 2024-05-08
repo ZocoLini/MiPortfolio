@@ -5,98 +5,149 @@
 
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <link rel="stylesheet" type="text/css" href="../../css/generics.css">
+  <link rel="stylesheet" type="text/css" href="../../css/index/right-pane.css">
   <link rel="stylesheet" type="text/css" href="../../css/work.css">
 
   <title>Sprout Lands</title>
 </head>
 <body>
-<header class="controlled-size flex centered-flex">
-  <div class="flex centered-flex">
-    <img src="../../img/works/leba/icono-leba.png" alt="leba">
-    <h1>Nombre Proyecto</h1>
-  </div>
-</header>
-
 <main class="centered flex controlled-size">
   <div>
-    <section>
-      <h2>Ficha Técnica</h2>
+    <div class="flex">
+      <div id="fichaTecnica" class="pane vertical-flex centered-flex">
 
-      <div class="two-columns">
-        <p><strong>Tecnologías Utilizadas:</strong> C# y Unity</p>
-        <p><strong>Equipo o Colaboradores:</strong> Borja Castellano</p>
-        <p><strong>Fecha de Creación:</strong> 2021</p>
-        <p><strong>Características Principales:</strong>
-        <ul>
-          <li>Juego de plataformeo vertical</li>
-          <li>Skins</li>
-          <li>Logros</li>
-          <li>Combate</li>
-          <li>Generación procedural</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Estado</h2>
-
-      <div class="two-columns">
-        <p><strong>Disponibilidad:</strong> El juego está disponible en Play Store para su descarga</p>
-        <p><strong>Documentación:</strong> El proyecto se encuentra pendiente de documentación.</p>
-        <p><strong>Refractorización:</strong> Debido a la antiguedad del proyecto este está pendiente de ser
-          refractorizado.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Descripción del proyecto</h2>
-
-      <div class="two-columns">
-        <p>Descripción del proyecto...</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Multimedia</h2>
-
-      <div>
-        <div class="corrillo-de-imagenes">
-          <img src="../../img/works/leba/captura1.jpg" alt="Captura 1">
-          <img src="../../img/works/leba/captura2.jpg" alt="Captura 2">
-          <img src="../../img/works/leba/captura3.jpg" alt="Captura 3">
-          <img src="../../img/works/leba/captura4.jpg" alt="Captura 4">
-          <img src="../../img/works/leba/captura5.jpg" alt="Captura 5">
-          <img src="../../img/works/leba/captura6.jpg" alt="Captura 6">
-          <img src="../../img/works/leba/captura7.jpg" alt="Captura 7">
+        <div id="iconoProyecto-container">
+          <img id="iconoProyecto" src="../../img/works/sprout-lands/icono-sprout-lands.png" alt="leba">
         </div>
+        <h1>Sprout Lands</h1>
+
+        <!--
+        <section id="enlaces" class="flex centered-flex">
+          <div class="iBox">
+            <a href="" target="_blank">
+              <img class="icon" src="../../img/icon/github.png" alt="GitHub">
+            </a>
+          </div>
+          <div class="iBox">
+            <a href="https://play.google.com/store/apps/details?id=com.LebaStudios.Leba&hl=es_419&gl=ES" target="_blank">
+              <img class="icon" src="../../img/icon/playstore.png" alt="PlayStore">
+            </a>
+          </div>
+        </section>
+        -->
+
+        <section id="info-proyecto" class="iBox">
+          <h2>Ficha Técnica</h2>
+          <div class="info-contenedor">
+            <img class="icon" src="../../img/icon/codigo.png" alt="Email">
+            <div class="vertical-flex">
+              <p class="third-text">Tecnologías utilizadas</p>
+              <p class="second-text">C# y Unity</p>
+            </div>
+          </div>
+
+          <div class="info-contenedor">
+            <img class="icon" src="../../img/icon/empresa.png" alt="Email">
+            <div class="vertical-flex">
+              <p class="third-text">Equipo o Colaboradores</p>
+              <p class="second-text">Borja Castellano</p>
+            </div>
+          </div>
+
+          <div class="info-contenedor">
+            <img class="icon" src="../../img/icon/calendario.png" alt="Email">
+            <div class="vertical-flex">
+              <p class="third-text">Fecha de creación</p>
+              <p class="second-text">2023</p>
+            </div>
+          </div>
+
+          <div class="info-contenedor">
+            <img class="icon" src="../../img/icon/dado.png" alt="Email">
+            <div class="vertical-flex">
+              <p class="third-text">Rol en el proyecto</p>
+              <p class="second-text">Diesño, arquitectira y desarrollo</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="caracteristicas" class="iBox">
+          <h2>Características</h2>
+          <ul>
+            <li>
+              <img class="icon" src="../../img/icon/editor-texto.png"
+                   title="Editor de texto avanzado"
+                   alt="Editor de texto avanzado"/>
+            </li>
+          </ul>
+        </section>
       </div>
-    </section>
+
+      <div id="central-pane">
+        <section id="description-pane" class="pane">
+          <h2>Descripción del proyecto</h2>
+
+          <div>
+            <p></p>
+          </div>
+        </section>
+
+        <section id="estado-pane" class="pane">
+          <h2>Estado</h2>
+
+          <div>
+            <ul>
+              <li>
+                <strong>Disponibilidad:</strong> Actualmente continúa el desarrollo.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--
+    <article id="contenedor-multimedia" class="centered">
+      <section class="pane">
+        <h2>Multimedia</h2>
+
+        <div class="controlled-size centered ">
+          <div class="corrillo-de-imagenes">
+            <img src="../../img/works/leba/captura1.jpg" alt="Captura 1">
+            <img src="../../img/works/leba/captura2.jpg" alt="Captura 2">
+            <img src="../../img/works/leba/captura3.jpg" alt="Captura 3">
+            <img src="../../img/works/leba/captura4.jpg" alt="Captura 4">
+            <img src="../../img/works/leba/captura5.jpg" alt="Captura 5">
+            <img src="../../img/works/leba/captura6.jpg" alt="Captura 6">
+            <img src="../../img/works/leba/captura7.jpg" alt="Captura 7">
+          </div>
+        </div>
+      </section>
+    </article>
+    -->
   </div>
 
-  <div id="enlaces" class="vertical-flex">
-    <a class="button" href="" target="_blank">
-      <img class="icon" src="../../img/icon/github.png" alt="GitHub">
+  <div id="nav-bar" class="vertical-flex fit-content">
+    <a class="pane-button" href="../../index.html" title="Home">
+      <img src="../../img/icon/home.png" alt="Home">
     </a>
-    <a class="button" href="" target="_blank">
-      <img class="icon" src="../../img/icon/playstore.png" alt="PlayStore">
+    <!--
+    <a class="pane-button flex" href="#contenedor-multimedia" title="Multimedia">
+      <img src="../../img/icon/multimedia.png" alt="Multimedia">
     </a>
+    -->
   </div>
 </main>
-
-<footer class="centered controlled-size">
-
-</footer>
 </body>
 
 <script>
   window.addEventListener('scroll', function () {
-    const divFijo = document.getElementById('enlaces');
+    const navigationPane = document.getElementById('nav-bar');
 
-    // Limita la posición vertical del div
-    if (window.scrollY <= 400) {
-      divFijo.style.top = (0) + 'px';
+    if (window.scrollY <= 120) {
+      navigationPane.style.top = (0) + 'px';
     } else {
-      divFijo.style.top = window.scrollY - 400 + 'px';
+      navigationPane.style.top = window.scrollY - 120 + 'px';
     }
   });
 </script>

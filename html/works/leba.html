@@ -36,7 +36,7 @@
         <section id="info-proyecto" class="iBox">
           <h2>Ficha Técnica</h2>
           <div class="info-contenedor">
-            <img class="icon" src="../../img/icon/email.png" alt="Email">
+            <img class="icon" src="../../img/icon/codigo.png" alt="Email">
             <div class="vertical-flex">
               <p class="third-text">Tecnologías utilizadas</p>
               <p class="second-text">C# y Unity</p>
@@ -44,7 +44,7 @@
           </div>
 
           <div class="info-contenedor">
-            <img class="icon" src="../../img/icon/email.png" alt="Email">
+            <img class="icon" src="../../img/icon/empresa.png" alt="Email">
             <div class="vertical-flex">
               <p class="third-text">Equipo o Colaboradores</p>
               <p class="second-text">Borja Castellano</p>
@@ -52,7 +52,7 @@
           </div>
 
           <div class="info-contenedor">
-            <img class="icon" src="../../img/icon/email.png" alt="Email">
+            <img class="icon" src="../../img/icon/calendario.png" alt="Email">
             <div class="vertical-flex">
               <p class="third-text">Fecha de creación</p>
               <p class="second-text">2021</p>
@@ -60,7 +60,7 @@
           </div>
 
           <div class="info-contenedor">
-            <img class="icon" src="../../img/icon/email.png" alt="Email">
+            <img class="icon" src="../../img/icon/dado.png" alt="Email">
             <div class="vertical-flex">
               <p class="third-text">Rol en el proyecto</p>
               <p class="second-text">Arquitectira, diseño y desarrollo</p>
@@ -71,32 +71,20 @@
         <section id="caracteristicas" class="iBox">
           <h2>Características</h2>
           <ul>
-            <li>Juego de plataformeo vertical</li>
-            <li>Skins</li>
-            <li>Logros</li>
-            <li>Combate</li>
-            <li>Generación procedural</li>
+            <li><img class="icon" src="../../img/icon/plataformas.png" title="Plataformeo vertical" alt="Plataformeo vertical"/></li>
+            <li><img class="icon" src="../../img/icon/skins.png" title="Skins" alt="Skins"/></li>
+            <li><img class="icon" src="../../img/icon/logros.png" title="Logros" alt="Logros"/></li>
+            <li><img class="icon" src="../../img/icon/procedural.png" title="Generación procedural" alt="Generación procedural"/></li>
+            <li><img class="icon" src="../../img/icon/combate.png" title="Combate" alt="Combate"/></li>
           </ul>
         </section>
       </div>
 
       <div id="central-pane">
-        <section class="pane">
-          <h2>Estado</h2>
-
-          <div class="two-columns">
-            <p><strong>Disponibilidad:</strong> El juego está disponible en Play Store para su descarga y el proyecto de
-              Unity en GitHub de forma pública</p>
-            <p><strong>Documentación:</strong> El proyecto se encuentra pendiente de documentación.</p>
-            <p><strong>Refractorización:</strong> Debido a la antiguedad del proyecto este está pendiente de ser
-              refractorizado.</p>
-          </div>
-        </section>
-
-        <section class="pane">
+        <section id="description-pane" class="pane">
           <h2>Descripción del proyecto</h2>
 
-          <div class="two-columns">
+          <div class="">
             <p>
               Juego de platformeo vertical con generación procedural de niveles. La mecánica principal del juego es ir
               saltando de pared en pared para ascender tan alto como puedas. Por el camino tendrás que esquivar obstaculos
@@ -113,6 +101,26 @@
             </p>
           </div>
         </section>
+
+        <section id="estado-pane" class="pane">
+          <h2>Estado</h2>
+
+          <div>
+            <ul>
+              <li>
+                <strong>Disponibilidad:</strong> El juego está disponible en Play Store para su descarga y el proyecto de
+                Unity en GitHub de forma pública
+              </li>
+              <li>
+                <strong>Documentación:</strong> El proyecto se encuentra pendiente de documentación.
+              </li>
+              <li>
+                <strong>Refractorización:</strong> Debido a la antiguedad del proyecto este está pendiente de ser
+                refractorizado.
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
 
@@ -120,7 +128,7 @@
       <section class="pane">
         <h2>Multimedia</h2>
 
-        <div>
+        <div class="controlled-size centered ">
           <div class="corrillo-de-imagenes">
             <img src="../../img/works/leba/captura1.jpg" alt="Captura 1">
             <img src="../../img/works/leba/captura2.jpg" alt="Captura 2">
@@ -136,11 +144,11 @@
   </div>
 
   <div id="nav-bar" class="vertical-flex fit-content">
-    <a class="pane-button" href="../../index.html">
-      <img class="icon" src="../../img/icon/home.png" alt="Imagen 1">
+    <a class="pane-button" href="../../index.html" title="Home">
+      <img src="../../img/icon/home.png" alt="Home">
     </a>
-    <a class="pane-button flex" href="#contenedor-multimedia">
-      <img class="icon" src="../../img/icon/multimedia.png" alt="Imagen 1">
+    <a class="pane-button flex" href="#contenedor-multimedia" title="Multimedia">
+      <img src="../../img/icon/multimedia.png" alt="Multimedia">
     </a>
   </div>
 </main>
@@ -149,7 +157,6 @@
 <script>
   window.addEventListener('scroll', function () {
     const navigationPane = document.getElementById('nav-bar');
-    const refPane = document.getElementById('central-pane');
 
     if (window.scrollY <= 120) {
       navigationPane.style.top = (0) + 'px';

@@ -3,30 +3,37 @@
 * {
   font-family: "JetBrains Mono", monospace;
 }
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 p {
   text-align: left;
 }
+
 .primary-text {
   color: var(--color-primary-text);
 }
+
 .secondary-text {
   color: var(--color-secondary-text);
 }
+
 .third-text {
   color: var(--color-third-text);
 }
+
 .centered {
   margin: 0 auto;
 }
-.icon
-{
+
+.icon {
   height: 30px;
   width: 30px;
 }
+
 .pane {
   padding: 15px;
   border-radius: 20px;
@@ -40,32 +47,35 @@ p {
   margin: 20px 10px;
   background-color: var(--color-panel);
 }
-.iframe-inner-pane
-{
+
+.iframe-inner-pane {
   padding: 10px;
   height: 600px;
   overflow: auto;
 }
+
 .fit-content {
   width: fit-content;
   height: fit-content;
 }
-.iBox
-{
+
+.iBox {
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
   background-color: var(--color-button-background);
 }
+
 .two-columns {
   column-count: 2;
   column-gap: 20px;
 }
+
 .flex {
   display: flex;
 }
-.vertical-flex
-{
+
+.vertical-flex {
   display: flex;
   flex-direction: column;
 }
@@ -83,5 +93,9 @@ p {
 
 .button:hover {
   background-color: var(--color-button-hover);
+}
+
+.debugging {
+  border: 1px solid black;
 }
 
