@@ -34,6 +34,15 @@ p {
   width: 30px;
 }
 
+.icon-label {
+  display: flex;
+  margin: 15px 5px;
+}
+
+.icon-label p {
+  margin: 0 0 0 10px;
+}
+
 .pane {
   padding: 15px;
   border-radius: 20px;
