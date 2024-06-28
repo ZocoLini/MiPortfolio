@@ -80,10 +80,10 @@
           </div>
 
           <div class="icon-label">
-            <img class="icon" src="../../img/icon/eventos.png"
-                 title="Eventos que permiten la implementación de lógica extra"
-                 alt="Eventos que permiten la implementación de lógica extra"/>
-            <p>Sistema de eventos</p>
+            <img class="icon" src="../../img/icon/download.png"
+                 title="Sincronización en la nube"
+                 alt="Sincronización en la nube"/>
+            <p>Sincronización en la nube</p>
           </div>
         </section>
       </div>
@@ -94,17 +94,23 @@
 
           <div>
             <p>
-              Seal Code es un editor de texto avanzado que permite la creación de IDEs personalizados alrededor suya. La
-              idea principal del proyecto es la creción de un core potente que permita su fácil implementación a la hora de
-              crear un IDE para cualquier lenguaje de programación. Además, sin necesidad de tener conocimientos de Java FX,
-              cualquier usuario puede crear sus plantillas de
-              autocompletado y resalto de sintaxis.
+              Seal Code es un editor de texto avanzado que permite la creación de entornos personalizados . La
+              idea principal del proyecto es la creción de un core potente que permita la facil implementación de
+              'plugins' que amplien sus funcionalidades. Además, sin necesidad de tener conocimientos de Java FX,
+              cualquier usuario puede crear sus plantillas de autocompletado y resalto de sintaxis según la extensión
+              de los ficheros abiertos.
             </p>
             <p>
               El core de Seal Code se comunica mediante eventos con la lógica que el programador quiera implementar,
               permitiendo así personalizar cada aspecto del entorno de desarrollo que se busque crear. Este enfoque lo que
               busca es minimizar la necesidad de entender como funciona internamente el software facilitando así su
               implementación.
+            </p>
+            <p>
+              En el momento actual el IDE cuenta con un plugin simple orientado al desarrollo en Java de ejemplo que
+              muestra las capacidades del core para implementar lo que el desarrollador desee. También cuenta, por defecto,
+              con un plugin que permite la creacion de una cuenta de usuario que se usará para la sincronización de las
+              configuraciones del editor en diferentes instancias del software.
             </p>
           </div>
         </section>
@@ -115,7 +121,14 @@
           <div>
             <ul>
               <li>
-                <strong>Disponibilidad:</strong> Actualmente continúa el desarrollo.
+                <strong>Desarrollo:</strong> Actualmente el core está pendiente de una refactorización pequeña. Se
+                tiene planificaco desarrollar un par de plugins extra que amplien las funcionalidades básicas y también está
+                pendiente modificar la comunicación del plugin de sincronización en la nube para pasar a usar un servidor
+                propio usando HTTP Requests.
+              </li>
+              <li>
+                <strong>Disponibilidad:</strong> El codigo está disponible en GitHub de forma pública pero no una
+                versión final del software.
               </li>
               <li>
                 <strong>Documentación:</strong> El proyecto se encuentra pendiente de documentación.

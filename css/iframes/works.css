@@ -22,7 +22,7 @@
 .work-state
 {
   position: absolute;
-  top: 0;
+  top: -25px;
   right: 0;
   margin: 10px;
   min-width: 100px;
