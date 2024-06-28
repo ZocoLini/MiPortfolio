@@ -28,7 +28,7 @@
 
 <body>
 <main>
-  <div id="left-panel" class="pane vertical-flex centered-flex fit-content">
+  <div id="left-panel" class="item pane vertical-flex centered-flex fit-content">
     <div id="profileImg-container">
       <img id="profileImg" src="img/profile.jpg" alt="Profile picture">
     </div>
@@ -103,25 +103,25 @@
     </a>
   </div>
 
-  <div id="center-panel">
+  <div id="center-panel" class="item">
     <iframe src="html/about.html" width="100%" height="100%"></iframe>
   </div>
 
-  <div id="right-pane" class="pane vertical-flex fit-content">
-    <div class="pane-button" onclick="loadPage('html/about.html')">
+  <div id="right-pane" class="item pane vertical-flex fit-content">
+    <a href="#center-panel" class="pane-button" onclick="loadPage('html/about.html')">
       <img class="icon" src="img/icon/about.png" alt="Imagen 1">
       <p>About</p>
-    </div>
+    </a>
 
-    <div class="pane-button" onclick="loadPage('html/resume.html')">
+    <a href="#center-panel" class="pane-button" onclick="loadPage('html/resume.html')">
       <img class="icon" src="img/icon/resume.png" alt="Imagen 2">
       <p>Resume</p>
-    </div>
+    </a>
 
-    <div class="pane-button" onclick="loadPage('html/works.html')">
+    <a href="#center-panel" class="pane-button" onclick="loadPage('html/works.html')">
       <img class="icon" src="img/icon/works.png" alt="Imagen 2">
       <p>Works</p>
-    </div>
+    </a>
   </div>
 </main>
 
