@@ -1,32 +1,28 @@
-h2, h1{
+h2, h1 {
   text-align: center;
 }
 
-body
-{
+body {
   background-color: var(--color-background);
 }
+
 /* left-pane */
-#fichaTecnica
-{
+#fichaTecnica {
   height: fit-content;
 }
 
-#fichaTecnica section
-{
+#fichaTecnica section {
   margin-bottom: 15px;
 }
 
-#iconoProyecto-container
-{
+#iconoProyecto-container {
   height: 100px;
   width: 200px;
   overflow: visible;
   position: relative;
 }
 
-#iconoProyecto
-{
+#iconoProyecto {
   height: 200px;
   width: 200px;
   position: absolute;
@@ -34,60 +30,51 @@ body
   top: -100px;
 }
 
-.left-icon-list
-{
+.left-icon-list {
   width: 300px;
 }
 
 /* principal */
-main
-{
+main {
   padding-top: 100px;
   gap: 10px;
 }
 
-#estado-pane div ul li
-{
+#estado-pane div ul li {
   margin-top: 10px;
 }
 
-#contenedor-multimedia
-{
+#contenedor-multimedia {
   border-radius: 10px;
 }
 
-.corrillo-de-imagenes-movil
-{
+.corrillo-de-imagenes-movil {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.corrillo-de-imagenes-movil img
-{
+.corrillo-de-imagenes-movil img {
   width: 200px;
   height: auto;
   border-radius: 10px;
 }
 
-.corrillo-de-imagenes-pc
-{
+.corrillo-de-imagenes-pc {
   justify-content: center;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.corrillo-de-imagenes-pc img
-{
-  width: auto;
-  height: 600px;
+.corrillo-de-imagenes-pc img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-.controlled-size
-{
+.controlled-size {
   width: min(85%, 1200px);
 }
 
@@ -114,9 +101,31 @@ main
   width: 20px;
   height: 20px;
 }
+
 .pane-button:hover {
   background-color: var(--color-button-hover);
 }
-.pane-button:hover img{
+
+.pane-button:hover img {
   filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 1080px) {
+  #main-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fichaTecnica {
+    min-width: 350px;
+    width: 90%;
+  }
+
+  main {
+    min-width: 350px;
+    max-width: 700px;
+    width: 80%;
+  }
 }
