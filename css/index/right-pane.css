@@ -35,3 +35,11 @@
   filter: brightness(0) invert(1);
 }
 
+@media (max-width: 700px) {
+  #right-pane {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
