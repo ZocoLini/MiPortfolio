@@ -44,21 +44,18 @@ p {
 }
 
 .pane {
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
-  margin: 20px 10px;
+  margin: 10px;
   background-color: var(--color-panel);
 }
 
 .iframe-pane {
-  padding: 15px;
   border-radius: 20px;
-  margin: 20px 10px;
   background-color: var(--color-panel);
 }
 
 .iframe-inner-pane {
-  padding: 10px;
   overflow: auto;
 }
 

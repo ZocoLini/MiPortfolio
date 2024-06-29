@@ -14,8 +14,6 @@ main {
 
 #center-panel {
   width: 50%;
-  overflow: clip;
-  padding: 0px;
 }
 
 @media (max-width: 1080px) {

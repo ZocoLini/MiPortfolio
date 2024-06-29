@@ -9,10 +9,14 @@ body {
 /* left-pane */
 #fichaTecnica {
   height: fit-content;
+  min-width: 350px;
+  max-width: 550px;
+  width: 90%;
 }
 
 #fichaTecnica section {
   margin-bottom: 15px;
+  width: 90%;
 }
 
 #iconoProyecto-container {
@@ -28,10 +32,6 @@ body {
   position: absolute;
   border-radius: 10%;
   top: -100px;
-}
-
-.left-icon-list {
-  width: 300px;
 }
 
 /* principal */
@@ -116,11 +116,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #fichaTecnica {
-    min-width: 350px;
-    width: 90%;
   }
 
   main {
